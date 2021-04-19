@@ -1,7 +1,11 @@
+package banking;
+
+import banking.Account;
+
 public class Customer {
     private String firstName;
     private String lastName;
-    private Account  account;
+    private Account account;
 
     public Customer(String firstName, String lastName) {
         this.firstName = firstName;
