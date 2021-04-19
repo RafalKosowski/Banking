@@ -1,6 +1,7 @@
 public class Customer {
     private String firstName;
     private String lastName;
+    private Account  account;
 
     public Customer(String firstName, String lastName) {
         this.firstName = firstName;
@@ -15,9 +16,9 @@ public class Customer {
         return lastName;
     }
     public Account getAccount(){
-        return null;
+        return account;
     }
-    public Account setAccount(Account acc){
-        return null;
+    public void setAccount(Account acc){
+        account=acc;
     }
 }
