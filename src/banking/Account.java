@@ -10,10 +10,24 @@ public class Account {
     public double getBalance() {
         return balance;
     }
-    public void deposit(double amt){
-        balance=balance+amt;
+    public boolean deposit(double amt){
+        //wpłać
+        if (amt>0){
+            balance=balance+amt;
+            return true;
+        }
+
+        return false;
+
     }
-    public void withdraw(double amt){
-        balance=balance-amt;
+    public boolean withdraw(double amt){
+        //wypłać
+        if (amt<balance){
+            balance=balance-amt;
+            return true;
+        }
+
+        return false;
+
     }
 }
