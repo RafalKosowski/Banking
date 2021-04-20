@@ -1,6 +1,7 @@
 package banking;
 
 public class Bank {
+
     private int numberOfCustomers;
     protected Customer [] customers = new Customer[100];
 
